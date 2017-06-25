@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to my #{title}
+  each sketch in list
+    a(href='/sketch/#{sketch}') #{sketch}
+    br
