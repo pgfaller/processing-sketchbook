@@ -12,10 +12,12 @@ void setup() {
 }
 
 void draw() {
-  lights();
-  directionalLight(128, 0, 0, 0, height, 0);
-  directionalLight(0, 128, 0, width, 0, 0);
-  directionalLight(0, 0, 128, width, height, 0);
+  //lights();
+  //translate(0,0,220);
+  directionalLight(255, 0, 0, 1, 0, 0);
+  directionalLight(0, 255, 0, 0, 1, 0);
+  directionalLight(0, 0, 255, 0, 0, -1);
+  //translate(0,0,-220);
   background(0);
   
   // Change height of the camera with mouseY
